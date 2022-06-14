@@ -1,0 +1,36 @@
+body{
+    background-color: aquamarine;
+}
+
+.login_1 , .login_2{
+    background: #01ff16;
+	padding: 10px;
+	float: none;
+	border-radius: 15px;
+}
+
+button{
+    background: #01ff16;
+    border-color: #01ff16;
+    font-size: 25px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    border-width: 0px;
+}
+
+button:hover{
+    background-color: darkgreen;
+    color: #01ff16;
+}
+
+#output{
+    background: white;
+    border-radius: 10px;
+    border-top: 10px solid darkgreen;
+    padding: 10px;
+    float: none;
+    text-align: left;
+}
+

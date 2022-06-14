@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Math Quiz Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrap.cdn.com/bootstrap/3.4.0/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="quiz_game.css">
+        
+    </head>
+    <body>
+        <center>
+            <hr>
+            <h1>Maths Quiz Game</h1>
+            <h3 style="color: white;">Use your brain instead of your calculator</h3>
+            <hr>
+        </center>
+        <br><br>
+        <h4 id="player_1_name">Player 1<h4 id="player_1_score">0</h4></h4>
+        <hr>
+        <h4 id="player_2_name">Player 2<h4 id="player_2_score">0</h4></h4>
+        <br>
+        <div class="container">
+            <center>
+                <h3 style="color: white;">Questioner enters the numbers so it will multiply and the person answering has to enter the answer correctly to score points</h3>
+                <h4>Question turn:- <span id="plyr_Q"></span></h4>
+                <h4>Answer turn :- <span id="plyr_A"></span></h4>
+                <div id="output">
+                    <h3 id="question"></h3>
+                    <label>Answer :</label>
+                    <input id="ans" type="text">
+                    <br>
+                    <h3 id="answer" class="btn btn-info" onclick="Answer()">Answer</h3>
+                </div>
+                <h3>Number 1</h3>
+                <input id="number1" type="text" class="form-control" placeholder="Enter number 1">
+                <h3>Number 2</h3>
+                <input id="number2" type="text" class="form-control" placeholder="Enter number 2"> 
+                <br>
+                <h3 id="send" onclick="send()" class="btn btn-success">Send</h3>
+            </center>
+        </div>
+        <script src="quiz_game_page.js"></script>
+    </body>
+</html>
