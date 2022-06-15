@@ -20,25 +20,27 @@ function send(){
     question_number = "<h3 id='question'>" + number1 + "X" + number2 + "</h3>";
     input_box = "<label>Answer :</label><input id='ans' type='text'>";
     check_button = "<br><h3 id='answer' class='btn btn-info' onclick='Answer()'>Answer</h3>"; 
-
     row = question_number + input_box + check_button;
+    
     document.getElementById("output").innerHTML = row;
 
     document.getElementById("number1").value = "";
     document.getElementById("number2").value = "";
 }
 
+
+
 function Answer(){
     get_answer = document.getElementById("ans").value;
 
     if(get_answer == product){
         if(answer_turn == "player1"){
-            update_player_1_score = player_1_score + 1;
-            document.getElementById("player_1_score").innerHTML = update_player_1_score;
+            player_1_score = player_1_score + 1;
+            document.getElementById("player_1_score").innerHTML = player_1_score;
         }
         else{
-            update_player_2_score = player_2_score +1;
-            document.getElementById("player_2_score").innerHTML = update_player_2_score;
+            player_2_score = player_2_score + 1;
+            document.getElementById("player_2_score").innerHTML = player_2_score;
         }
     }
     if(question_turn == "player1"){
@@ -54,6 +56,7 @@ function Answer(){
         answer_turn = "player2";
         document.getElementById("plyr_A").innerHTML = player_2_name;
     }
+
 
     document.getElementById("ans").value = "";
     document.getElementById("question").innerHTML = "";
